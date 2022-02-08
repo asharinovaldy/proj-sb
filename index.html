@@ -19,8 +19,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./preloader.css">
+  
+
+    <!-- <script>
+        $(window).on('load', function (){
+          $('.preloader').fadeOut('slow');
+        });
+    </script> -->
+
 </head>
+
+<!-- preloader -->
+<!-- <div class="preloader">
+  <div class="loading">
+      <img src="./assets/images/preloader.gif">
+  </div>
+</div> -->
+
+
+<!-- <div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div> -->
+
 <body>
+
+<!-- <div class="preloader">
+      <div class="loading">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+</div> -->
     
   <!-- Main Header -->
   <section class="main-header">
@@ -49,31 +81,50 @@
         <!-- End of Navbar -->
         <div class="container my-3 main">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <header class="header">
-                        <h1 class="headerOne" loading="lazy">Temukan&nbsp;informasi </h1>
-                            <div id="carouselExampleInterval" class="carousel slide my-3" data-bs-ride="carousel">
+                        <h1 class="headerOne">Temukan&nbsp;informasi </h1>
+                            <div id="carouselExampleInterval" class="carousel slide my-3 vertical" data-bs-ride="carousel" data-bs-touch="true" >
                                 <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="4000">
-                                    <h1 class="text-slide">Remunerasi</h1>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                    <h1 class="text-slide">Kinerja Karyawan</h1>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                    <h1 class="text-slide">Hubungan Industrial</h1>
-                                </div>
+                                  <div class="carousel-item active" data-bs-interval="5000">
+                                      <h1>Remunerasi</h1>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="4000">
+                                      <h1>Karyawan dan Kinerja</h1>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="4000">
+                                      <h1>Hubungan Industrial</h1>
+                                  </div>
                                 </div>
                             </div>
                         <h1 class="headerTwo">yang&nbsp;Anda&nbsp;butuhkan</h1>
                       </header>
-                      <p class="description">selamat datang di platform penyedia informasi mengenai departemen remunerasi dan hubungan industrial PT. Pupuk Kaltim</p>
-                    <a class="btn btn-cta" href="#video-section"> Temukan Sekarang <span></span> </a>
+                      <!-- <p class="description">selamat datang di platform penyedia informasi mengenai <br> departemen remunerasi dan hubungan industrial PT. Pupuk Kaltim</p> -->
+                      <a class="btn-cta" href="#video-section"> Temukan Sekarang </a>
                 </div>
-                <div class="col-lg-6 col-sm-12">
-                    <img src="./assets/images/undraw_web_search_re_efla.svg" class="img-header" alt="">
+                <div class="col-lg-4 img-header">
+                  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true" >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                          <img src="./assets/images/Finance analysis _Flatline.svg" alt="" srcset="">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                          <img src="./assets/images/Team work_Flatline.svg" alt="" srcset="">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="4000">
+                          <img src="./assets/images/Startup_Flatline.svg" alt="" srcset="">
+                      </div>
+                    </div>
+                </div>
                 </div>
             </div>
+            <!-- <div class="grid">
+              <div class="g-col-lg-6 col-sm-12">
+                  <img src="./assets/images/stil-H0YxjMzc6ZQ-unsplash.jpg" class="img-header" width="200" height="200" alt="">
+              </div>
+                  <img src="./assets/images/ben-kolde-hvhICCNM6n8-unsplash.jpg" class="img-header" alt="">
+                  <img src="./assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg" class="img-header" alt="">
+            </div> -->
           </div>
     </section>
     <!-- End of Main Header -->
@@ -81,27 +132,33 @@
     <!-- Video Section -->
     <section class="video-section" id="video-section">
         <div class="container">
+          <h1 class="text-center">
+            Departemen Remunerasi dan Hubungan Industrial
+          </h1>
+          <p>
+            Kami membantu untuk menemukan informasi yang Anda butuhkan
+          </p>
+          <div class="video-container">
             <div class="row">
-                <h1 class="text-center">
-                    Departemen Remunerasi dan Hubungan Industrial
-                </h1>
-                <p>
-                  Kami membantu untuk menemukan informasi yang Anda butuhkan
-                </p>
-                <div class="col-lg-12 col-sm-12">
-                    <div class="video-content">
-                        <video controls>
-                            <source src="./assets/video/mixkit-open-office-space-914.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+              <div class="col-lg-5 col-sm-12 img-video">
+                <img src="./assets/images/Search engine _Monochromatic.svg" alt="" srcset="">
+              </div>
+              <div class="col-lg-7 col-sm-12">
+                  <div class="video-content">
+                      <video controls>
+                          <source src="./assets/video/mixkit-open-office-space-914.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
             </div>
+            <a class="btn-cta" href="#main-content"> Info lebih lanjut </a>
+          </div>
         </div>
     </section>
     <!-- End of Video Section -->
 
     <!-- Main Content -->
-    <section class="main-content">
+    <section class="main-content" id="main-content">
         <div class="container">
           <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -130,7 +187,23 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile1" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages1" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings1" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -143,7 +216,23 @@
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home2" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages2" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings2" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -156,7 +245,23 @@
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home3" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile3" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings3" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home3" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile3" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages3" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings3" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -169,7 +274,23 @@
                       </h2>
                       <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home4" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile4" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages4" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings4" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home4" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile4" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages4" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings4" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -182,7 +303,23 @@
                       </h2>
                       <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home5" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile5" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages5" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings5" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home5" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile5" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages5" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings5" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -195,7 +332,23 @@
                       </h2>
                       <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          
+                          <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home6" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile6" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages6" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings6" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home6" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile6" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages6" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings6" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -216,7 +369,23 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k1" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k1" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k1" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-k1" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-k1" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-k1" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-k1" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -229,7 +398,23 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k2" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k2" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k2" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home-k2" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile-k2" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages-k2" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings-k2" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                     </div>
                   </div>
                 </div>
@@ -242,7 +427,23 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k3" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k3" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k3" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home-k3" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile-k3" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages-k3" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings-k3" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                     </div>
                   </div>
                 </div>
@@ -255,7 +456,23 @@
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k4" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k4" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k4" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k4" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home-k4" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile-k4" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages-k4" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings-k4" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                     </div>
                   </div>
                 </div>
@@ -268,7 +485,23 @@
                   </h2>
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k5" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k5" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k5" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k5" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home-k5" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile-k5" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages-k5" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings-k5" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                     </div>
                   </div>
                 </div>
@@ -281,7 +514,23 @@
                   </h2>
                   <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionKaryawan">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-k6" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-k6" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-k6" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-k6" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home-k6" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                              <div class="tab-pane fade" id="v-pills-profile-k6" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                              <div class="tab-pane fade" id="v-pills-messages-k6" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                              <div class="tab-pane fade" id="v-pills-settings-k6" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                            </div>
+                          </div>
+
                     </div>
                   </div>
                 </div>
@@ -302,7 +551,23 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h1" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h1" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h1" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h1" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h1" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h1" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h1" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -315,7 +580,23 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h2" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h2" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h2" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h2" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h2" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h2" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h2" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -328,7 +609,23 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h3" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h3" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h3" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h3" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h3" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h3" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h3" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -341,7 +638,23 @@
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h4" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h4" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h4" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h4" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h4" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h4" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h4" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h4" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -354,7 +667,23 @@
                   </h2>
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h5" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h5" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h5" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h5" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h5" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h5" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h5" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h5" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -367,7 +696,23 @@
                   </h2>
                   <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionIndustrial">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      
+                      <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-h6" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Konten 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-h6" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Konten 2</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages-h6" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Konten 3</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings-h6" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Konten 4</button>
+                        </div>
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home-h6" role="tabpanel" aria-labelledby="v-pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="v-pills-profile-h6" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                          <div class="tab-pane fade" id="v-pills-messages-h6" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                          <div class="tab-pane fade" id="v-pills-settings-h6" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -413,7 +758,7 @@
 
 
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="./assets/js/jquery-3.6.0.slim.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>

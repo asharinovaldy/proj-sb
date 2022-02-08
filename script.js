@@ -14,4 +14,3 @@ $(window).on('load', function (){
 $(window).on('load', function (){
     $('.btn-cta').addClass('text-focus-in');
 });
-

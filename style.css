@@ -1,5 +1,7 @@
 :root {
     --font-family: 'Poppins', sans-serif;
+    --text-color: #ECDBBA;
+    --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -10,16 +12,37 @@
     scroll-behavior: smooth;
 }
 
+body {
+     background-color: #191919;
+        /* ff 3.6+ */
+        /* background:-moz-linear-gradient(88deg, #191919 0%, #0A253C 100%); */
+
+        /* safari 5.1+,chrome 10+ */
+        /* background:-webkit-linear-gradient(88deg, #191919 0%, #0A253C 100%); */
+
+        /* opera 11.10+ */
+        /* background:-o-linear-gradient(88deg, #191919 0%, #0A253C 100%); */
+
+        /* ie 6-9 */
+        /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A253C', endColorstr='#191919', GradientType=0); */
+
+        /* ie 10+ */
+        /* background:-ms-linear-gradient(88deg, #191919 0%, #0A253C 100%); */
+
+        /* global 94%+ browsers support */
+        /* background:linear-gradient(88deg, #191919 0%, #0A253C 100%); */ 
+}
+
 .logo {
     text-decoration: none;
     font-size: 32px;
     font-weight: 700;
-    color: #0A253C;
+    color: var(--text-color);
     margin: 0 auto;
 }
 
 .nav-item .nav-link {
-    color: #0A253C;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
 }
@@ -35,13 +58,14 @@
 
 .main-header {
     /* margin-top: 40px; */
-    background-image: url('./assets/images/bg.png');
+    /* background-image: url('./assets/images/bg.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .header {
     margin: 40px auto;
+    text-align: start;
 }
 
 .carousel-item h1 {
@@ -49,17 +73,19 @@
 }
 
 .header h1 {
-    font-size: 42px;
+    font-size: 64px;
     font-weight: 700;
-    color: #0A253C;
-    text-align: start;
+    color: var(--text-color);
+    display: inline-block;
+    overflow: hidden;
 }
+
 
 .description {
     margin-top: 40px;
     font-size: 16px;
-    text-align: start;
-    color: #0A253C;
+    text-align: center;
+    color: var(--text-color);
     font-weight: 400;
     text-transform: capitalize;
 }
@@ -77,6 +103,12 @@ span.fadee {
     transform: translateY(0px);
 }
 
+/* .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+} */
+
 .btn-cta {
     width: 200px;
     height: 50px;
@@ -85,9 +117,13 @@ span.fadee {
     color: #f5f5f5;
     /* background-color: #1268B3; */
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+
     margin: 20px 0;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
 
         /* ff 3.6+ */
     background:-moz-linear-gradient(93deg, rgba(18, 104, 179, 1) 0%, rgba(0, 188, 212, 1) 100%); 
@@ -114,13 +150,19 @@ span.fadee {
 }
 
 .img-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-header img {
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .focus-in-expand {
-    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
-    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+    -webkit-animation: focus-in-expand 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+    animation: focus-in-expand 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
 
 .scale-in-hor-center {
@@ -233,15 +275,19 @@ span.fadee {
 
 
 .video-section {
-   margin: 80px auto;
-   background-image: url('./assets/images/img-bg-vid.svg');
+   margin: 80px auto 10px;
+   /* background-image: url('./assets/images/img-bg-vid.svg'); */
    background-size: cover;
    height: 800px;
    padding: 80px 0;
 }
 
+.video-container {
+    margin-top: 40px;
+}
+
 .video-section h1 {
-    color: #0A253C;
+    color: var(--text-color);
     font-size: 28px;
     font-weight: 700;
 }
@@ -250,6 +296,7 @@ span.fadee {
     font-weight: 400;
     font-size: 16px;
     margin-top: 20px;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -259,11 +306,25 @@ span.fadee {
     align-items: center;
 }
 
+.img-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .video-content video {
     border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    width: 60%;
+    box-shadow: var(--box-shadow);
+    width: 85%;
     margin-top: 60px;
+}
+
+.video-section .btn-cta {
+    margin: 40px auto;
+}
+
+.main-content {
+    margin-top: 40px;
 }
 
 .nav-link {
@@ -276,7 +337,7 @@ span.fadee {
 
 
 .nav-item button {
-    color: #0A253C !important;
+    color: var(--text-color) !important;
 }
 
 .nav-item .active {
@@ -284,11 +345,19 @@ span.fadee {
     background-color: #F47920 !important;
 }
 
+.accordion-body .nav-link {
+    color: #0A253C;
+}
+
+.accordion-body .nav-link.active {
+    color: var(--text-color);
+}
+
 .footer {
     width: 100%;
     height: 100%;
     padding: 40px;
-    background-color: #0A253C;
+    /* background-color: #F47920; */
     color: #f5f5f5;
     font-size: 16px;
     font-weight: 500;
@@ -298,7 +367,7 @@ span.fadee {
     list-style: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px) {
 
     .main {
         display: flex;
@@ -311,18 +380,19 @@ span.fadee {
     }
 
     .header {
-        margin: 10px auto;
+        margin: 0 auto;
+        text-align: center;
     }
 
 
     .header h1 {
-        font-size: 22px;
-        text-align: center;
+        font-size: 24px;
     }
-    
+
     .description {
         font-size: 14px;
         text-align: center;
+        font-weight: 400;
     }
 
     .btn-cta {
@@ -330,7 +400,7 @@ span.fadee {
     }
 
     img.img-header {
-        height: 100%;
+        height: 200px;
         margin: 40px auto;
     }
 
@@ -340,15 +410,15 @@ span.fadee {
     }
 
     .video-section h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .video-section p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
-    .video-content video{
-        width: 100%;
+    .video-content video {
+        width: 90%;
     }
 
     .footer {
@@ -356,7 +426,9 @@ span.fadee {
     }
 }
 
-@media only screen and (max-width: 820px) {
+
+
+/* @media only screen and (min-width: 768px) {
     .main {
         display: flex;
         flex-direction: column;
@@ -368,13 +440,13 @@ span.fadee {
     }
 
     .header {
-        margin: 10px auto;
+        margin: 0 auto;
+        text-align: center;
     }
 
 
     .header h1 {
         font-size: 32px;
-        text-align: center;
     }
 
     .description {
@@ -410,4 +482,4 @@ span.fadee {
     .footer {
         height: 100%;
     }
-}
+} */
