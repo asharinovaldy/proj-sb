@@ -12,7 +12,23 @@
 }
 
 body {
-    background-color: #191919;
+      /* ff 3.6+ */
+    background:-moz-linear-gradient(140deg, rgba(4, 3, 3, 1) 27%, rgba(10, 37, 60, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(140deg, rgba(4, 3, 3, 1) 27%, rgba(10, 37, 60, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(140deg, rgba(4, 3, 3, 1) 27%, rgba(10, 37, 60, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0A253C', endColorstr='#040303', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(140deg, rgba(4, 3, 3, 1) 27%, rgba(10, 37, 60, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(140deg, rgba(4, 3, 3, 1) 27%, rgba(10, 37, 60, 1) 100%);
     font-family: var(--font-family);
 }
 
@@ -428,13 +444,17 @@ span.fadee {
     border-radius: 8px;
     background-color: #ECDBBA;
     position: relative;
-    left: 80px;
-    bottom: 20px;
+    left: 20px;
+    top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
     box-shadow: var(--box-shadow);
+}
+
+.explanation:hover {
+    transform: translateY(20px);
 }
 
 .explanation p {
@@ -478,6 +498,7 @@ span.fadee {
     text-align: center;
     width: 100%;
     height: 400px;
+    margin-top: 40px;
 }
 
 .contact-section p,
@@ -510,6 +531,64 @@ span.fadee {
 .footer li {
     list-style: none;
 }
+
+.prism {
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(135deg) rotateY(70deg) rotateZ(44deg);
+    }
+
+    .prism:hover {
+        animation: prism 8s linear infinite;
+    }
+
+    @keyframes prism {
+        100% {
+          transform: rotateX(90deg);
+        }
+      }
+
+    .prism .tcface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+    .prism .sfront {
+    height: 103.07764064044152px;
+    transform-origin: 50% 0;
+    background: #6d330a;
+    transform: rotateX(-14.036243467926477deg);
+    }
+    .prism .sback {
+    height: 103.07764064044152px;
+    transform-origin: 50% 0;
+    background: #F47920;
+    transform: rotateX(14.036243467926477deg);
+    }
+    .prism .sleft {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 100px solid #e09e6e;
+    transform: rotateY(-90deg);
+    left: -25px;
+    }
+    .prism .sright {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 100px solid #F47920;
+    transform: rotateY(-90deg);
+    left: 25px;
+    }
+    .prism .sbottom {
+    transform: rotateX(90deg);
+    background: #dd8749;
+    top: 75px;
+    }
 
 @media only screen and (max-width: 500px) {
 
