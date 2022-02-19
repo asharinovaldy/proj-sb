@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #040303;
+    background-color: #07192f;
     font-family: var(--font-family);
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .header h1 {
-    font-size: 72px;
+    font-size: 80px;
     font-weight: 700;
     color: var(--text-color);
     display: inline-block;
@@ -63,7 +63,7 @@ body {
 }
 
 .headerOne {
-    font-family: 'Lora', serif !important;
+    font-family: 'Gideon Roman', cursive !important;
     font-weight: 400;
 }
 
@@ -114,8 +114,8 @@ span.fadee {
     transform-style: preserve-3d;
     position: absolute;
     margin: 0 auto;
-    right: 120px;
-    top: 200px;
+    right: 30px;
+    top: 250px;
     animation: coin 7s linear infinite;
   }
   
@@ -228,11 +228,11 @@ span.fadee {
   }
   
   .coin .back:after {
-    content: "WHAT DO YOU LOVE";
-    padding: 27px 0 0 0;
+    content: "SOBAT RHI";
+    padding: 12px 0 0 0;
     width: 100%;
     height: 100%;
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: bold;
     color: #ECDBBA;
     line-height: 1;
@@ -376,24 +376,6 @@ span.fadee {
    background-size: cover;
    height: 800px;
    padding: 80px 0;
-
-    /* ff 3.6+ */
-    background:-moz-linear-gradient(30deg, #030304 67%, #0A253C 100%); 
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(30deg, #030304 67%, #0A253C 100%);
-
-    /* opera 11.10+ */
-    background:-o-linear-gradient(30deg, #030304 67%, #0A253C 100%);
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0A253C', endColorstr='#030304', GradientType=0 );
-
-    /* ie 10+ */
-    background:-ms-linear-gradient(30deg, #030304 67%, #0A253C 100%);
-
-    /* global 94%+ browsers support */
-    background:linear-gradient(30deg, #030304 67%, #0A253C 100%);
 }
 
 .video-container {
@@ -444,20 +426,21 @@ span.fadee {
     height: 200px;
     padding: 40px;
     border-radius: 8px;
-    background-color: #ECDBBA;
+    /* background-color: #ECDBBA; */
+    background:linear-gradient(90deg, #FBF8F1 0%, #54BAB9 100%);
     position: relative;
     left: 20px;
     top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
     box-shadow: var(--box-shadow);
+    margin-bottom: 40px;
 }
 
-.explanation:hover {
+/* .explanation:hover {
     transform: translateY(20px);
-}
+} */
 
 .explanation p {
     z-index: 2;
@@ -467,12 +450,8 @@ span.fadee {
 }
 
 .main-content {
-    margin-top: 40px;
-    
-    /* ff 3.6+ */
-    background: linear-gradient(135deg, hsl(240, 14%, 1%) 77%, #F47920 100%); 
-
-
+    margin-top: 120px;
+    background:radial-gradient(circle at 91% 53%, #F47920 0%, #07192F 16%);
 }
 
 .nav-link {
@@ -507,7 +486,7 @@ span.fadee {
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 400px;
 }
 
 .contact-section p,
@@ -521,6 +500,7 @@ span.fadee {
     border: 1px solid #ECDBBA;
     width: 200px;
     margin: 0 auto;
+    border-radius: 50px;
 }
 
 .btn-contact:hover {
@@ -549,63 +529,6 @@ span.fadee {
     justify-content: space-between;
 }
 
-.prism {
-    width: 50px;
-    height: 50px;
-    transform-style: preserve-3d;
-    transform: rotateX(135deg) rotateY(70deg) rotateZ(44deg);
-    }
-
-    .prism:hover {
-        animation: prism 8s linear infinite;
-    }
-
-    @keyframes prism {
-        100% {
-          transform: rotateX(90deg);
-        }
-      }
-
-    .prism .tcface {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    }
-    .prism .sfront {
-    height: 103.07764064044152px;
-    transform-origin: 50% 0;
-    background: #6d330a;
-    transform: rotateX(-14.036243467926477deg);
-    }
-    .prism .sback {
-    height: 103.07764064044152px;
-    transform-origin: 50% 0;
-    background: #F47920;
-    transform: rotateX(14.036243467926477deg);
-    }
-    .prism .sleft {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 100px solid #e09e6e;
-    transform: rotateY(-90deg);
-    left: -25px;
-    }
-    .prism .sright {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 100px solid #F47920;
-    transform: rotateY(-90deg);
-    left: 25px;
-    }
-    .prism .sbottom {
-    transform: rotateX(90deg);
-    background: #dd8749;
-    top: 75px;
-    }
 
 @media only screen and (max-width: 500px) {
 
@@ -677,16 +600,12 @@ span.fadee {
         position: static;
     }
 
+    .main-content {
+        margin-top: 10px;
+    }
+
     .contact-section {
         height: 100%;
-    }
-
-    .prism-container {
-        height: 100%;
-    }
-
-    .prism {
-        display: none;
     }
 
     .contact-section p,
@@ -700,61 +619,3 @@ span.fadee {
         height: 100%;
     }
 }
-
-
-
-/* @media only screen and (min-width: 768px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .navbar-collapse {
-        display: block;
-    }
-
-    .header {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    .header h1 {
-        font-size: 32px;
-    }
-
-    .description {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .btn-cta {
-        width: 100%;
-    }
-
-    img.img-header {
-        height: 400px;
-        margin: 40px auto;
-    }
-
-    .video-section {
-        height: 100%;
-    }
-
-    .video-section h1 {
-        font-size: 24px;
-    }
-
-    .video-section p {
-        font-size: 16px;
-    }
-
-    .video-content video {
-        width: 100%;
-    }
-
-    .footer {
-        height: 100%;
-    }
-} */
